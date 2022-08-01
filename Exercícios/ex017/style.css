@@ -1,0 +1,31 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#B164F5,#8666DE);
+}
+main{
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.682);
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    color: #6464F5;
+    text-shadow: 2px 2px 1px #6464f58a;
+}
+h2{
+    color: #D160EB;
+}
+button{
+    background-color:#6085EB;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #6464f58a;
+    
+}

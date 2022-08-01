@@ -1,0 +1,45 @@
+
+body{
+  background-color: #31b01acc;
+    
+}
+div{
+    background-color: #65ae58;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.538);
+    margin: 3%;
+}
+h2{
+    color: rgb(2, 83, 2);
+    text-decoration: underline;
+    text-align: center;
+}
+p{
+    margin: 3%;
+    text-indent: 5%;
+    text-align: justify;
+    
+}
+#principal{
+    text-align: center;
+    background-color:#1F7011 ;
+    color: rgba(255, 255, 255, 0.723);
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 3%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.523);
+}
+h1{
+    text-decoration: underline;
+}
+.basico{
+    color: rgb(27, 127, 7);
+}
+.intermediario{
+    color: rgba(206, 206, 15, 0.859);
+
+}
+.avancado{
+    color: rgba(255, 0, 0, 0.727);
+}
+    

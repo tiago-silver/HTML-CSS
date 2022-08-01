@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptação de imagens</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminmua o tamanho do seu navegador. </p>
+
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/foto-mp.png" type="image/png">
+        <source media="(max-width:850px )" srcset="imagens/foto-pm.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <p>Ouça um hip-hop! Dê um play &#x1F447;</p>
+    <audio src="midias/The Von Trapp Family Choir - Alge.mp3"controls ></audio>
+    <p>Ou ouça um podcast do nosso querido professor Gustavo Guanabara &#x1F596;&#x1F913;... </p>
+    <audio preload="metadata" autoplay controls loop >
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.waw" type="audio/wav">
+        <p>Ah não!Infelismente o seu navegador não é compatível com o áudio, mas não se desespere você pode fazer o dounload <a href="midias/guanacast-33.mp3">aqui</a>.</p>
+    </audio>
+   
+   
+</body>
+</html>
