@@ -1,0 +1,62 @@
+@charset "UTF8";
+@font-face {
+    font-family: student;
+    src: url('../fontes/KGPrimaryItalics.ttf') format('truetype');
+   
+}
+:root{
+    --font-student: student, 'sans-serif';
+    --font-destaque:Arial,'sans-serif';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 30vw
+    
+    
+}
+header >h1{
+    padding-top: 7vw;
+}
+main{
+    font-family:var(--font-student);
+    
+    font-size: 5vw;
+   
+    
+}
+main >section{
+    padding: 30px;
+}
+main >p{
+    text-align: justify;
+    line-height: 5px;
+}
+#imagem1{
+    
+    background-image: url(../imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 30px;
+    
+    
+}
+#imagem1 > p{
+    
+    background-color: rgba(0, 0, 0, 0.397);
+    
+    color: white;
+    width: 47vw;
+    
+    
+}
+.normal{
+    background-color: white;
+}
