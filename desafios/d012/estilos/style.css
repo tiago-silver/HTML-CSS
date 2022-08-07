@@ -1,4 +1,4 @@
-@cahrset "UTF-8";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
@@ -43,6 +43,9 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+#link{
+    color: black;
 }
 section{
     padding-top: 10vh;
