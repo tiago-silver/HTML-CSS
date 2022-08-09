@@ -14,9 +14,17 @@
             border-collapse: collapse;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.514);
         }
+        caption{
+            background-color: lightgray;
+            padding: 8px;
+            font-weight: bold;
+        }
         thead, tfoot{
             background-color: aqua;
             border: 1px solid black;
+        }
+        tbody >tr:nth-child(even){/*odd, 2n-1, 2n*/
+                background-color: lightgray;
         }
         td,th{
             border:  1px solid black;
@@ -41,10 +49,11 @@
     </TABLE>
     -->
     <table>
+        <caption>População da unidade federativa</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,7 +168,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">208.330.886</td>
             </tr>
         </tfoot>
