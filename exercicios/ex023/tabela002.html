@@ -10,6 +10,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
+            position: relative;
             width: 400px;
             border-collapse: collapse;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.514);
@@ -20,8 +21,14 @@
             font-weight: bold;
         }
         thead, tfoot{
-            background-color: aqua;
+            background-color: #383838;
             border: 1px solid black;
+        }
+        /*Cabeçalho fixo*/
+        thead > tr >th{
+            position: sticky;
+            top: 0;
+            background-color: #383838;
         }
         tbody >tr:nth-child(even){/*odd, 2n-1, 2n*/
                 background-color: lightgray;
