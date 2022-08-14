@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        caption{
+            border: 1px solid black;
+            padding: 8px;
+            font-size: 1.3em; 
+            font-weight: bolder;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .cnome{
+            background-color: yellow;
+        }
+        .cgrupo{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <!--selecionar coluna-->
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrupo" span="2">
+            
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria Fernanda</td>
+                <td>Feminino</td>
+                <td>35</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Joaquim Barbosa</td>
+                <td>Masculino</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>José Ribeiro</td>
+                <td>Masculino</td>
+                <td>55</td>
+                <td>Caminhoneiro</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
