@@ -7,32 +7,41 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Teste formulário</h1>
-    <form action="cadastro.js" method="get">
+    <h1>Testando formulário</h1>
+
+    <form action="cadastro.js" autocomplete="on" method="get">
         <p>
-            <label for="iname">Nome</label>
-            <input type="text" name="name" id="iname" required placeholder="Nome completo." maxlength="30" autocomplete="name">
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
         </p>
-        <P>
+        <p>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" required maxlength="30" placeholder="Informe o email" autocomplete="email">
+        </p>
+
+        <p>
             <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" required placeholder="0 a 10." step="0.1">
-        </P>
+            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" autocomplete="number" step="0.5">
+        </p>
+
         <p>
-            <label for="Imes">Período letivo</label>
-            <input type="month" name="mes" id="imes" required>
+            <label for="imes">Período letivo</label>
+            <input type="month" name="mes" id="imes" required autocomplete="bday-month" >
         </p>
         <p>
-            <label for="idata">Data</label>
-            <input type="date" name="data" id="idata" required>
+            <label for="idata">Data da prova</label>
+            <input type="date" name="data" id="idata" required  >
         </p>
+
         <p>
-            <label for="Ihora">Horário da prova</label>
-            <input type="time" name="hora" id="ihora" required>
+            <label for="ihorario">Horário da prova</label>
+            <input type="time" name="horario" id="ihorario" required>
         </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
+    
 </body>
 </html>

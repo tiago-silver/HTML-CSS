@@ -1,1 +1,1 @@
-console.alert("Dados enviados!!!");
+Dados enviados!
