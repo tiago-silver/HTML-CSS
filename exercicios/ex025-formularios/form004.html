@@ -5,26 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        *{
+            background-color: rgb(224, 250, 215);
+            font-family:'Courier New', Courier, monospace
+        }
+        h1{
+            text-align: center;
+        }
+        fieldset{
+            background-color: rgb(212, 197, 227);
+            border-radius: 5px;
+            box-shadow: 1px 4px 3px 1px;
+        }
+        .button{
+            background-color: rgb(113, 163, 198);
+            border-radius: 5px;
+            
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.js" autocomplete="on">
+    <form action="cadastro.js">
 
-        <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="informe o e-mail">
-        </p>
+        <!--Use a tag foldset para agrupar dados semelhantes e Legendo para descrever os tops de dados -->
 
-        <p>
-            <label for="icelular">Telefone</label>
-            <input type="tel" name="telefone" id="icelular" autocomplete="tel" placeholder="Informe o telefone">
-        </p>
-        <!--Estudar mais sobre RegEx-->
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <fieldset>
+            <legend>Dados pessoais</legend>
 
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" required autocomplete="name" maxlength="30" placeholder="Informe o nome">
+            </p>
+
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Informe o e-mail" >
+            </p>
+            <p >
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="Ex:(00)0 0000-0000" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+        </fieldset>
+
+        <!--Estudar mais sobre epressões regulares-->
+
+        <p >
+            <input type="submit" value="Enviar"class="button">
+            <input type="reset" value="Limpar"class="button">
+        </p>
     </form>
-</body>
 </html>
