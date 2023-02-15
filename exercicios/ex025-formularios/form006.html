@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h1>Color, range e file</h1>
+    <form action="cadastro.js" method="post">
+
+        <fieldset>
+            <legend>Definições</legend>
+
+            <p>
+                <label for="icor">Selecione a cor</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+
+            <p>
+                <label for="inivel">Selecione o nível</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="5">
+            </p>
+
+            <p>
+                <label for="imagem">Foto do perfil</label>
+                <input type="file" name="magem" id="imagem">
+            </p>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
