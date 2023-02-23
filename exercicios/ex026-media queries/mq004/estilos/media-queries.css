@@ -5,11 +5,37 @@
 /* Pesquisar por resoluções atuais de telas termo: Typical Device Breakpoints*/
 
 @media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 1px solid black;
+    }
+   
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Esta impressão foi feita no curso do inlustre professor Gustavo Guanabara.';
+        text-decoration: overline;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block}
+    img#pc{display: none;}
+    img#tv{display: none;}
     
 }
 @media screen and (min-width: 768px) and (max-width:992px) {
     body{
         background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main{
+        width: 50vw;
     }
     img#phone{display: none;}
     img#tablet{display: block;}
@@ -22,6 +48,9 @@
    body{
     background-image: url(../imagens/back-pc.jpg);
    }
+   main{
+    width: 70vw;
+   }
    img#phone{display: none;}
     img#tablet{display: none;}
     img#print{display: none}
@@ -32,6 +61,10 @@
 @media screen and (min-width:1920px) {
     body{
         background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 90vw;
     }
 
     img#phone{display: none;}
