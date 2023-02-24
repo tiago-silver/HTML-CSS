@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*Typical Devices Checkpoints
+--------------------------------
+Pequenas telas : até 600px
+Celular: de 600px até 1080px
+Tablet: 1080px até até 1920px
+Telas grandes acima de 1920px.
+*/
+
+@media screen and (min-width:768px) {
+   
+    span#burger{
+        display: none;
+    } 
+    menu{
+        display: block;
+    }
+   
+   menu > ul > li{
+    display: inline-block;
+   }
+
+   main{
+    width: 768px;
+   }
+   
+    
+}
